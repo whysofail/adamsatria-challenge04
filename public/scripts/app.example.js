@@ -22,15 +22,9 @@ class App {
 
  async filter(){
     const  driverType = (app.driverQuery.value === "true")
-    console.log(driverType)
     const  date = new Date(app.dateQuery.value);
     date.setHours(app.timeQuery.value);
-    console.log(app.dateQuery.value)
-    console.log(app.timeQuery.value)
-    console.log (date)
     const  capacity = app.capacityQuery.value
-    console.log(capacity)
-    console.log(driverType)
     const cars = await Binar.listCars((obj =>{
       if(capacity.length >= 1){
         return obj.available === driverType &&
@@ -46,9 +40,7 @@ class App {
     //   return obj.capacity >= capacity &&
     //          obj.availableAt <= date;        
     // })
-    console.log(capacity.length)
     Car.init(cars);
-    console.log(Car.list)
   }
 
 
@@ -69,15 +61,12 @@ class App {
       node.innerHTML = car.isEmpty();
       this.carContainerElement.appendChild(node);
         
-    }
-    
-    console.log (car)
-   
+    }  
   };
 
-  async load() {
+  // async load() {
    
-  }
+  // }
 
   clear = () => {
     let child = this.carContainerElement.firstElementChild;
@@ -88,9 +77,4 @@ class App {
     }
   };
 
-  test = () => {
-    const node = document.createElement("div");
-    this.ContainerElement.innerHTML = JSON.stringify.node + '<h1>CREATED.</h1>';
-  }
-  
 }
