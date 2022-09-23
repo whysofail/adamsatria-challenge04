@@ -18,7 +18,8 @@ app.init().then(app.run)
 //     app.filter().then(app.run)
 // }
 let clicked = true
-app.testButton.addEventListener('click', () =>{
+app.testButton.addEventListener('click', (e) =>{
+        e.preventDefault();
         app.clear();
         app.filter().then(app.run);
 

@@ -76,34 +76,28 @@
 </section>
 <div id="ea">
     <div class="container">
-            <div class="search-cards p-2">
-                <div class="row row-cols-md-auto g-2 align-items-end justify-content-around py-lg-3">
-                    <div class="col-6 col-md-auto col-sm-4">
-                        <form action="index.html">
+            <div class="search-cards py-4">
+                <form class="row row-cols-lg-auto g-3 justify-content-center align-items-end">
+                    <div class="col-sm-2">
                         <div class="form-items">
-                            <div class="mb-3">
                                 <label for="tipe-driver" class="form-label">Tipe Driver</label>
                                 <select class="form-select" aria-label="Default select example" name="driverType" id="driverType" required>
                                     <option value ="" disabled selected>Pilih Tipe Driver</option>
                                     <option value="true">Dengan Supir</option>
                                     <option value="false">Lepas Kunci</option>
-                                  </select>
-                              </div>
+                                  </select>     
                         </div>
                     </div>
-                    <div class="col-6 col-md-auto col-sm-4">
+                    <div class="col-sm mx-5">
                         <div class="form-items">
-                            <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Tanggal</label>
                                 <input type="date" class="form-control" name="date" id="date">
-                              </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-auto col-sm-4">
+                    <div class="col-sm-2 mx-3">
                         <div class="form-items">
-                            <div class="mb-3">
                                 <label for="" class="form-label">Waktu Jemput/Ambil</label>
-                                <select class="form-select custom-select" aria-label="Default select example" name="time" id="time" required>
+                                <select class="form-control custom-select" aria-label="Default select example" name="time" id="time" required>
                                     <option value ="" disabled selected>Pilih Waktu</option>
                                     <option value="8">08.00</option>
                                     <option value="9">09.00</option>
@@ -111,36 +105,27 @@
                                     <option value="11">11.00</option>
                                     <option value="12">12.00</option>
                                   </select>
-                              </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-auto col-sm-12">
-                        <div class="form-items">
-                            <div class="mb-3">
-                                <label for="" class="form-label">Jumlah Penumpang (optional)</label>
-                                <input type ="text" class="form-control" placeholder="Jumlah Penumpang" id = 'capacity' name="capacity">
-                              </div>
-                        </div>
+                    <div class="mx-2">
+                            <label for="" class="form-label">Jumlah Penumpang (optional)</label>
+                            <input type ="text" class="form-control" placeholder="Jumlah Penumpang" id = 'capacity' name="capacity">
                     </div>
-                    <div class="col-md-auto col-sm-6">
-                        <div class="form-items mb-3">
-                                    <input type="button" class="btn btn-success" value="Cari Mobil" id="test-btn"/>
-                        </div>
+                    <div class="col-sm-2 mx-2">
+                        <button  class="btn btn-success" id="test-btn">Cari Mobil</button>
                     </div>
-                </div>     
+                </form>   
             </div>
         </form>
     </div>
 </div>
-  
-</div>
-</div>
 
-<div class="container pt-5">
+
+<div class="container pt-5 d-flex justify-content-center">
     <div class="row" id="main-content"> 
     </div>
 </div>
-    
+
     
     <footer class="pt-5">
         <div class="container pt-5">

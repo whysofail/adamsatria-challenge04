@@ -40,6 +40,10 @@ class App {
     //   return obj.capacity >= capacity &&
     //          obj.availableAt <= date;        
     // })
+    console.log(driverType);
+    console.log(date);
+    console.log(capacity);
+    console.log(cars);
     Car.init(cars);
   }
 

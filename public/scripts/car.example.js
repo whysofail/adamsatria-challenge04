@@ -66,9 +66,9 @@ class Car {
   }
 
   isEmpty() {
-  return  `<div class="card text-center bg-danger text-white">
+  return  `<div class="card text-center bg-danger text-white" style="width:"50%"">
   <div class="card-body">
-    <h5 class="card-title py-5">Nothing found. :(</h5>
+    <h5 class="card-title py-4">Nothing found. :(</h5>
   </div>
 </div>
         `

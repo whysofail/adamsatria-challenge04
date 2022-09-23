@@ -10,7 +10,7 @@ require('http').createServer(function (request, response) {
                 case '/': 
                     fileServer.serve(request, response);
                 break;
-                case '/cari':
+                case '/cars':
                     //specific html pages
                     fileServer.serveFile('search.html', 200, {}, request, response);
                     break;
